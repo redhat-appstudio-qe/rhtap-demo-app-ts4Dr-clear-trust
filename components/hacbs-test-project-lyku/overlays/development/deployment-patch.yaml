@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-lyku
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-xlob-tenant/rhtap-demo-app/hacbs-test-project-lyku@sha256:1b25d075bd324b8f4bb6a45a1f32b85c99b6dea0f75f3c7c4906239efbfbc5c5
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
